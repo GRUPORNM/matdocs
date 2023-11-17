@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../tqa/matdoc_ovw_srv/$metadata">
+        <edmx:Include Namespace="MATDOC_OVW_SRV" Alias="SAP"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="com.sap.tqa.od_matdoc_overview_anno_mdl.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/StockChangeType">
+                <Annotation Term="Common.FilterDefaultValue" String="05"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/StockChangeContext">
+                <Annotation Term="Common.FilterDefaultValue" String="01"/>
+            </Annotations>
+            <Annotations/>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/PlantName">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/SalesOrderItem">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/PurchaseOrderItem">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/DeliveryDocumentItem">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IssuingOrReceivingMaterial">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GoodsReceiptIsNonValuated">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/HasMultipleAccountAssignment">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/MaterialText">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic1Desc">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic2Desc">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic3Desc">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/MaterialDocumentItem">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/StockChangeSelectionType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CalculatedStockChangeType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/DocumentTitle">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/MaterialName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/MatlDocLineItmAutoCrtedIdfrTxt">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/StorageLocationName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/SupplierName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/SupplierBasicAuthorizationGrp">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/WBSElementInternalID">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/WBSDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CustomerName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CustomerBasicAuthorizationGrp">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/InventoryStockTypeName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/InventorySpecialStockTypeName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GoodsMovementRefDocType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GoodsReceiptType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ConsumptionPosting">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GoodsMovementTypeName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GoodsMovementReasonName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CreationTime">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CreatedByUserDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/AccountingDocumentTypeName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/InventoryTransactionTypeText">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IssuingOrReceivingMaterialName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IssuingOrReceivingPlantName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IssuingOrReceivingStLocName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IssuingOrReceivStockTypeName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CostCenterName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/FixedAssetDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/GLAccountLongName">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IsStorLocAuthznCheckActive">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/IsIssgOrRcvgStorLocAuthChkActv">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/UICT_MatlDocHasNoSerialNumbers">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/UICT_MatDocHasNoSrlNmbrForPInv">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/SeasonDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CollectionDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ThemeDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/Material">
+                <Annotation Term="Common.SemanticObject" String="Material"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/Batch">
+                <Annotation Term="Common.SemanticObject" String="Batch"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/StockSegment">
+                <Annotation Term="Common.SemanticObject" String="Stock Segment"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductSeasonYear">
+                <Annotation Term="Common.SemanticObject" String="Product Season Year"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductSeason">
+                <Annotation Term="Common.SemanticObject" String="Product Season"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCollection">
+                <Annotation Term="Common.SemanticObject" String="Product Collection"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductTheme">
+                <Annotation Term="Common.SemanticObject" String="Product Theme"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/CrossPlantConfigurableProduct">
+                <Annotation Term="Common.SemanticObject" String="Generic Product"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic1">
+                <Annotation Term="Common.SemanticObject" String="Product Characteristic 1"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic2">
+                <Annotation Term="Common.SemanticObject" String="Product Characteristic 2"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType/ProductCharacteristic3">
+                <Annotation Term="Common.SemanticObject" String="Product Characteristic 3"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.xTQAxMAT_DOCSType">
+                <Annotation Term="UI.FieldGroup" Qualifier="DocumentNotes">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="DocumentReferenceId"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillOfLading"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaterialDocumentHeaderText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Document Notes"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="Fashion">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductSeasonYear"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductSeason"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductCollection"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductTheme"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CrossPlantConfigurableProduct"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductCharacteristic1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductCharacteristic2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProductCharacteristic3"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fashion Fields"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="FieldsAccounting">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CostCenter"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MasterFixedAsset"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="GLAccount"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fields Accounting"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="FieldsMaterialDocument">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CreatedByUser"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Batch"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Plant"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="StorageLocation"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="InventoryStockType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="QuantityInEntryUnit"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="EntryUnit"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="DebitCreditCode"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="IsCancelled"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaterialGroup"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaterialType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="WBSElement"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="AccountingDocumentType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="IssuingOrReceivingPlant"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="IssuingOrReceivingStorageLoc"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="IssuingOrReceivingStockType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="InventorySpecialStockType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="GoodsMovementType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="GoodsMovementReasonCode"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="StockSegment"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fields Material Document"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="FieldsProduct">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="OrderID"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fields Production"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="FieldsPurchasing">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PersonnelNumber"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="WorkItem"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Supplier"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PurchaseOrder"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PurchasingDocumentItemText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fields Purchasing"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="FieldsSales">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="SalesOrder"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Customer"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="DeliveryDocument"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Fields Sales"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="DocumentDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PostingDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreatedByUser"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AccountingDocumentType"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="InventoryTransactionType"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaterialDocument"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaterialDocumentYear"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Material"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Plant"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="StorageLocation"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PostingDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="InventoryStockType"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>StockChangeType</PropertyPath>
+                        <PropertyPath>StockChangeContext</PropertyPath>
+                        <PropertyPath>Plant</PropertyPath>
+                        <PropertyPath>StorageLocation</PropertyPath>
+                        <PropertyPath>InventoryStockType</PropertyPath>
+                        <PropertyPath>MaterialDocument</PropertyPath>
+                        <PropertyPath>MaterialDocumentYear</PropertyPath>
+                        <PropertyPath>Material</PropertyPath>
+                        <PropertyPath>PostingDate</PropertyPath>
+                        <PropertyPath>DocumentDate</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Customer_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Delivery_VhType/ShippingPoint">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Delivery_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Ir_Plant_Vh2Type/Fullname">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Ir_Storloc_VhType/IsStorLocAuthznCheckActive">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialType">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialGroup">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialBaseUnit">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialGrossWeight">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialNetWeight">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_I_Material_VhType/MaterialWeightUnit">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Pers_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Pers_VhType/IsBusinessPurposeCompleted">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Plant_Vh2Type/Fullname">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Po_VhType/PurchasingOrganization">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Po_VhType/PurchasingGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Po_VhType/PurchasingDocumentType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Po_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Sorder_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Storloc_VhType/IsStorLocAuthznCheckActive">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.F_Mmim_Supplier_VhType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="TQA.MATDOC_OVW_SRV.I_MatlDocFixedAssetVHType/AssetClass">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
