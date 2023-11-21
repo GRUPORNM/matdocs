@@ -14,7 +14,7 @@ sap.ui.define([
                     oSmartTableView: "",
                     variantInput: "Standard"
                 });
-
+                sessionStorage.setItem("goToLaunchpad", "X");
                 this.setModel(oViewModel, "Main");
 
                 this.getRouter().attachRouteMatched(this.getUserAuthentication, this);
@@ -22,13 +22,24 @@ sap.ui.define([
 
             onAfterRendering: function () {
                 //DEPLOY
+                var that = this;
+                sessionStorage.setItem("goToLaunchpad", "X");
+                window.addEventListener("message", function (event) {
+                    var data = event.data;
+                    if (data.action == "goToMainPage") {
+                        that.onNavBack();
+                    }
+                });
+
                 if (sessionStorage.getItem("selectedTheme").indexOf("dark") !== -1) {
                     this.byId("variantInput").removeStyleClass("variantMode");
                     this.byId("variantInput").addStyleClass("variantModeBlack");
+                    jQuery(".sapUiBlockLayer, .sapUiLocalBusyIndicator").css("background-color", "rgba(28,34,40,0.99)");
                 }
                 else {
                     this.byId("variantInput").removeStyleClass("variantModeBlack");
                     this.byId("variantInput").addStyleClass("variantMode");
+                    jQuery(".sapUiBlockLayer, .sapUiLocalBusyIndicator").css("background-color", "rgba(255, 255, 255, 0.99)");
                 }
             },
 
