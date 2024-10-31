@@ -1,0 +1,17 @@
+<mvc:View controllerName="matdocs.controller.MaterialDocuments"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:f="sap.f"
+    xmlns:smartTable="sap.ui.comp.smarttable">
+
+    <f:DynamicPage id="page" headerPinned="true">
+        <f:header>
+            <f:DynamicPageHeader id="dynamicHeader">
+                <Input id="variantInput" type="Text" value="{Main>/variantInput}" showValueHelp="true" valueHelpOnly="true" valueHelpRequest="onShowVariantList" class="variantMode" valueHelpIconSrc="sap-icon://dropdown" width="6.5%" />
+                <smartFilterBar:SmartFilterBar id="smartFilterBarGroups" initialise="onFBarInitialise" entitySet="xTQAxMAT_DOCS" filterChange="onFilterChange" />
+            </f:DynamicPageHeader >
+        </f:header>
+    </f:DynamicPage>
+</mvc:View>

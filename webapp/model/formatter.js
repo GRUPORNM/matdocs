@@ -12,7 +12,6 @@ sap.ui.define([], function () {
         },
 
         MovementQuantityType: function (oDebitCreditCode) {
-            debugger;
             if (oDebitCreditCode != null) {
 
                 switch (oDebitCreditCode) {
